@@ -99,6 +99,7 @@ bool vector<T>::empty() const
 
 } // namespace msp
 
+// Testing msp::vector
 int main()
 {
 	{
