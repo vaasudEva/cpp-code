@@ -1,4 +1,10 @@
 
+/**
+* C++ Vector impl
+* Author: Shakthi Prashanth M <m.shakthi.prashanth@gmail.com>
+* Date: 10-Aug-2018
+*/
+
 #include <iostream>
 #include <string>
 
