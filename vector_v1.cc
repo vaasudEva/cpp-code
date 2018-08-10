@@ -19,7 +19,7 @@ public:
   vector(size_t cap = 1);
   ~vector();
 
-  size_t size() const { return !mPos ? 0 : mPos; }
+  size_t size() const { return mPos; }
   T &operator[](int i) const;
   const T &front() const;
   const T &back() const;
