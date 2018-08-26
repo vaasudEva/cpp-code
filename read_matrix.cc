@@ -20,8 +20,6 @@ vector<Row> readMatrix(int rows, int cols)
       matrix[r].push_back(item);
     }
   }
-  print(matrix);
-
   return matrix;
 }
 
