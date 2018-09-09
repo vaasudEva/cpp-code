@@ -9,7 +9,9 @@
 
 using namespace std;
 
-ostream &operator<<(ostream &out, vector<vector<int>> &graph);
+using Graph = vector<vector<int>>;
+
+ostream &operator<<(ostream &out, Graph &graph);
 
 int main()
 {
@@ -20,10 +22,10 @@ int main()
         size_t nVertices, nEdges;
         cin >> nVertices >> nEdges;
 
-        vector<vector<int>> graph;
+        Graph graph;
 
-	for (int vertex = 0; vertex < nVertices; vertex++)
-     	graph.push_back({});
+		for (int vertex = 0; vertex < nVertices; vertex++)
+   		  	graph.push_back({});
 
         for (int edge = 0; edge < nEdges; edge++) {
             int v0, v1;
@@ -38,7 +40,7 @@ int main()
   	return 0;
 }
 
-ostream &operator<<(ostream &out, vector<vector<int>> &graph)
+ostream &operator<<(ostream &out, Graph &graph)
 {
 	int idx = 0;
     for (auto edge : graph) {
