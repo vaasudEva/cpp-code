@@ -22,8 +22,8 @@ int main()
 
         vector<vector<int>> graph;
 
-		for (int vertex = 0; vertex < nVertices; vertex++)
-     		graph.push_back({});
+	for (int vertex = 0; vertex < nVertices; vertex++)
+     	graph.push_back({});
 
         for (int edge = 0; edge < nEdges; edge++) {
             int v0, v1;
