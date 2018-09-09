@@ -11,7 +11,7 @@ using namespace std;
 
 using Graph = vector<vector<int>>;
 
-ostream &operator<<(ostream &out, Graph &graph);
+ostream &operator<<(ostream &out, const Graph &graph);
 
 int main()
 {
@@ -40,7 +40,7 @@ int main()
   	return 0;
 }
 
-ostream &operator<<(ostream &out, Graph &graph)
+ostream &operator<<(ostream &out, const Graph &graph)
 {
 	int idx = 0;
     for (auto edge : graph) {
