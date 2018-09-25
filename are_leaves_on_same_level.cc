@@ -80,12 +80,10 @@ bool BSTNode::insert(int data) {
 }
 
 int main(int argc, char *argv[]) {
-  int input[] = {10, 8, 4, 9, 15, 12, 20};
-
-  vector<int> in;
-  for (auto item : input) in.push_back(item);
+  vector<int> in = {10, 8, 4, 9, 15, 12, 20};
 
   auto root = make_shared<BSTNode>(in.front());
+
   for (auto val : in) root->insert(val);
 
   cout << (root->areLeavesAtSameLevel() ? "Yes" : "No") << endl;
