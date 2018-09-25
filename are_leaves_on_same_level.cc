@@ -5,6 +5,8 @@
  * 1. Inserting nodes in Tree
  * 2. Check whether leaf nodes of the tree are in same level
  *
+ * Code style: Google
+ *
  * Author: Shakthi Prashanth <m.shakthi.prashanth@gmail.com>
  */
 
@@ -59,6 +61,7 @@ bool BSTNode::areLeavesAtSameLevel(int l, int &ll) const {
   return areSameOnLeft && areSameOnRight;
 }
 
+// Doesn't allow duplicates
 bool BSTNode::insert(int data) {
   if (data > val) {
     if (!right) {
@@ -83,7 +86,6 @@ int main(int argc, char *argv[]) {
   for (auto item : input) in.push_back(item);
 
   auto root = make_shared<BSTNode>(in.front());
-
   for (auto val : in) root->insert(val);
 
   cout << (root->areLeavesAtSameLevel() ? "Yes" : "No") << endl;
